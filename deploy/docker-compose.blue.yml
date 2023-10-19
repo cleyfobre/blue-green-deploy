@@ -1,0 +1,10 @@
+version: "3"
+services:
+  yangcheon-road-api:
+    image: 087124035214.dkr.ecr.ap-northeast-2.amazonaws.com/yangcheon-road-api:latest
+    container_name: yangcheon-road-api-blue
+    environment:
+      - LANG=ko_KR.UTF-8
+      - UWSGI_PORT=8000
+    ports:
+      - 6205:6204
